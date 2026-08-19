@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFlow — Simple AI Task Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <div class="logo">⚡ TaskFlow</div>
+      <a href="#demo" class="btn">Try Demo</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <span class="badge">#1 Product Hunt Nominee</span>
+      <h1>Organize Your Tasks<br><span class="highlight">In 3 Seconds.</span></h1>
+      <p>TaskFlow automatically categorizes, prioritizes, and completes your daily work using simple AI rules.</p>
+      <a href="#demo" class="btn btn-large">See It In Action ↓</a>
+    </div>
+  </section>
+
+  <!-- Product Demo Section -->
+  <section class="demo-section" id="demo">
+    <div class="container">
+      <div class="demo-card">
+        <div class="demo-header">
+          <h3>Interactive Product Preview</h3>
+          <button id="organizeBtn" class="btn">▶ Auto-Organize Tasks</button>
+        </div>
+
+        <div class="task-list" id="taskList">
+          <div class="task-item">
+            <span class="task-status pending">Pending</span>
+            <span class="task-text">1. Review landing page feedback</span>
+          </div>
+          <div class="task-item">
+            <span class="task-status pending">Pending</span>
+            <span class="task-text">2. Prepare Product Hunt launch copy</span>
+          </div>
+          <div class="task-item">
+            <span class="task-status pending">Pending</span>
+            <span class="task-text">3. Send update to early supporters</span>
+          </div>
+        </div>
+
+        <div class="demo-result" id="demoResult">
+          Click "Auto-Organize Tasks" to watch TaskFlow sort your list automatically!
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <h2>Why People Love TaskFlow</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="icon">🚀</div>
+          <h3>Lightning Fast</h3>
+          <p>Instant loading with zero lag. Organized in under 1 second.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🔒</div>
+          <h3>100% Private</h3>
+          <p>Your tasks are saved locally on your browser. No data tracking.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">✨</div>
+          <h3>Super Simple</h3>
+          <p>No complicated settings. Works right out of the box.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta">
+    <div class="container">
+      <h2>Get Early Access Today</h2>
+      <p>Join early supporters getting work done 10x faster.</p>
+      <form id="signupForm" class="signup-form">
+        <input type="email" placeholder="Enter your email" required id="emailInput">
+        <button type="submit" class="btn">Join Waitlist</button>
+      </form>
+      <p id="signupSuccess" class="success-message"></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 TaskFlow. Simple AI productivity for everyone.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
